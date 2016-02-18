@@ -6,6 +6,8 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.squareTriangle.client.presenter.Presenter;
+import com.squareTriangle.client.presenter.TrianglePresenter;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>
@@ -17,6 +19,9 @@ public class SquareTriangle implements EntryPoint {
      */
     public void onModuleLoad() {
 
+
+        Presenter presenter = new TrianglePresenter();
+        presenter.go(RootPanel.get());
 
 
 
