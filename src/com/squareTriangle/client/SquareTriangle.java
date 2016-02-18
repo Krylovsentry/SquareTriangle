@@ -1,6 +1,7 @@
 package com.squareTriangle.client;
 
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.event.shared.SimpleEventBus;
 import com.google.gwt.user.client.ui.*;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.DOM;
@@ -20,6 +21,7 @@ public class SquareTriangle implements EntryPoint {
     public void onModuleLoad() {
 
 
+        SimpleEventBus eventBus = new SimpleEventBus();
 
 
     }
