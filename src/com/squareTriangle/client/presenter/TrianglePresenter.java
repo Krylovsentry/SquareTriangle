@@ -16,6 +16,7 @@ public class TrianglePresenter implements Presenter {
 
 
         public Widget asWidget();
+        public void setPresenter(TrianglePresenter presenter);
 
 
     }
@@ -23,6 +24,8 @@ public class TrianglePresenter implements Presenter {
 
     @Override
     public void bind() {
+
+        view.setPresenter(this);
 
     }
 

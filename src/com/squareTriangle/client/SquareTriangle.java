@@ -20,9 +20,6 @@ public class SquareTriangle implements EntryPoint {
     public void onModuleLoad() {
 
 
-        Presenter presenter = new TrianglePresenter();
-        presenter.go(RootPanel.get());
-
 
 
     }
