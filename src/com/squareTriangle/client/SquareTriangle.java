@@ -3,12 +3,8 @@ package com.squareTriangle.client;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.event.shared.SimpleEventBus;
 import com.google.gwt.user.client.ui.*;
-import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.squareTriangle.client.presenter.Presenter;
-import com.squareTriangle.client.presenter.TrianglePresenter;
+import com.squareTriangle.client.views.PopUpAddRowView;
+import com.squareTriangle.client.views.ButtonShowPopUpView;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>
@@ -22,6 +18,11 @@ public class SquareTriangle implements EntryPoint {
 
 
         SimpleEventBus eventBus = new SimpleEventBus();
+
+
+        PopUpAddRowView popUpAddRowView = new PopUpAddRowView(eventBus);
+        RootPanel.get().add(new ButtonShowPopUpView(eventBus,"Calculate"));
+
 
 
     }
