@@ -12,6 +12,25 @@ body, td, a, div, .p {
     text-align: center;
 }
 
+
+table{
+
+    width: 100% !important;
+    border-color: black;
+
+}
+
+
+
+
 button{
     align-content: center;
+    margin: 5px !important;
+}
+
+.label-error {
+
+    border-color: red;
+    color: red;
+
 }
